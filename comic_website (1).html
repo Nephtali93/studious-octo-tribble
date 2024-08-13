@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication de BD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .comic {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .comic img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .signup, .rating, .search, .gallery {
+            margin-top: 30px;
+        }
+        form input[type="email"], form input[type="text"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+        }
+        form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .rating input[type="number"] {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Publication de BD</h1>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">BD en ligne</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>Bienvenue sur notre site de publication de BD</h2>
+            <p>Découvrez nos BD en ligne, accessibles à tout le monde !</p>
+        </section>
+
+        <!-- Search Functionality -->
+        <section class="search">
+            <h3>Recherche de BD</h3>
+            <input type="text" placeholder="Rechercher des BD...">
+        </section>
+
+        <!-- Comic section with rating -->
+        <section class="comic">
+            <h3>Dernières publications</h3>
+            <!-- Example comic thumbnails -->
+            <div>
+                <img src="https://via.placeholder.com/300" alt="BD 1">
+                <p>BD 1 - Chapitre 1</p>
+                <div class="rating">
+                    <label for="rating1">Note :</label>
+                    <input type="number" id="rating1" name="rating1" min="1" max="5">
+                </div>
+                <a href="#">Télécharger</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300" alt="BD 2">
+                <p>BD 2 - Chapitre 1</p>
+                <div class="rating">
+                    <label for="rating2">Note :</label>
+                    <input type="number" id="rating2" name="rating2" min="1" max="5">
+                </div>
+                <a href="#">Télécharger</a>
+            </div>
+        </section>
+
+        <!-- Signup Form -->
+        <section class="signup">
+            <h3>Inscription à la Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Votre email">
+                <input type="submit" value="S'inscrire">
+            </form>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h3>Galerie d'illustrations</h3>
+            <div class="comic">
+                <img src="https://via.placeholder.com/300" alt="Illustration 1">
+                <img src="https://via.placeholder.com/300" alt="Illustration 2">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Publication de BD. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
